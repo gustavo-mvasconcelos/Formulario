@@ -1,0 +1,189 @@
+html{
+    font-size: 62.5%;
+    font-weight: 300;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(219,102,154);
+    background: linear-gradient(180deg, rgba(219,102,154,1) 0%, rgba(155,116,195,1) 54%, rgba(70,136,249,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario .informacao{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+    gap: 11px;
+}
+.formulario .informacao .titulo{
+    font-size: 25px;
+    font-weight: 900;
+    width: 400px;   
+}
+.formulario .informacao .subtitulo{
+    font-size: 17px;
+    width: 320px;  
+}
+.formulario .inputs{
+    background-color: #fff;
+    width: 440px;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+}
+.formulario .inputs .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input:focus{
+    /* border: none; */
+    box-shadow: none;
+    outline: none;
+}
+.formulario .inputs .container input{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    
+}
+
+.validador-nome-off {
+    visibility: hidden;
+}
+.validador-email-off {
+    visibility: hidden;
+}
+.validador-telefone-off {
+    visibility: hidden;
+}
+.validador-mensagem-off{
+    visibility: hidden;
+}
+
+.validador-nome-on {
+    visibility: visible;
+}
+.validador-email-on {
+    visibility: visible;
+}
+.validador-telefone-on {
+    visibility: visible;
+}
+.validador-mensagem-on {
+    visibility: visible;
+}
+
+.formulario .inputs .container .nome {
+    display: flex;
+    width: 400px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 5px; 
+}
+
+.formulario .inputs .container .email {
+    display: flex;
+    width: 400px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.formulario .inputs .container .telefone {
+    display: flex;
+    width: 400px;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.formulario .inputs .container .mensagem {
+    display: flex;
+    margin: 0%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+.formulario .inputs .container .mensagem input{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: top;
+    height: 150px;
+}
+
+.formulario .inputs .mensagem h2{
+    display: flex;
+    margin-top: 10px;
+    color: #000;
+    font-size: 15px;
+}
+.formulario .inputs .botao button{ 
+    background-color: #3CCC87;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    width: 400px;
+    height: 42px;
+    transition: 0.3s;
+    margin-bottom: 21px;
+    margin-top:40px;
+}
+
+.red{
+    display: flex;
+    width: 400px;
+    height: 45px;
+    border: 2px solid #FF0000;
+    border-radius: 5px; 
+}
+
+
+.mensagem-red {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    border: 2px solid #FF0000;
+    border-radius: 5px; 
+}
+
+.green{
+    display: flex;
+    width: 400px;
+    height: 45px;
+    border: 2px solid rgb(0, 252, 0);
+    border-radius: 5px; 
+}
+
+.mensagem-green {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    border: 2px solid rgb(5, 255, 5);
+    border-radius: 5px; 
+}

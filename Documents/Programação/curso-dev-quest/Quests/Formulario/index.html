@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="formulario">
+
+            <div class="informacao">
+                <h1 class="titulo">FICOU COM DÙVIDA? <br>
+                    NOS MANDE UMA MENSAGEM!
+                </h1>
+                <p class="subtitulo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entramos em
+                    contato em menos de 24h.</p>
+            </div>
+            <div class="inputs">
+                <div class="container">
+                    <div class="nome" id="container-name">
+                        <input type="nome" placeholder="Nome completo *" id="input-nome" required>
+                    </div>
+                    <span class="validador-nome-off" id="validador-nome-off">Campo obrigatório</span>
+                </div>
+                <div class="container">
+                    <div class="email" id="container-email">
+                        <input type="email" placeholder="Email *" id="input-email" required>
+                    </div>
+                    <span class="validador-email-off" id="validador-email-off">Campo obrigatório</span>
+                </div>
+                <div class="container">
+                    <div class="telefone" id="container-telefone">
+                        <input type="telefone" placeholder="Telefone *" id="input-telefone" required>
+                    </div>
+                    <span class="validador-telefone-off" id="validador-telefone-off">Campo obrigatório</span>
+                </div>
+                <div class="container">
+                    <div class="mensagem" id="container-mensagem">
+                        <input type="text" placeholder="Mensagem *" id="input-mensagem" required>
+                    </div>
+                    <span class="validador-mensagem-off" id="validador-mensagem-off">Campo obrigatório</span>
+                    <h2> *Campos obrigatorios</h2>
+                </div>
+                <div class="botao">
+                    <button class="enviar" type="button" id="enviar" onclick="SubmitEvent()"> Enviar </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/formulario.js"></script>
+</body>
+
+</html>
