@@ -43,7 +43,7 @@ main{
 }
 .formulario .inputs{
     background-color: #fff;
-    width: 440px;
+    width: 400px;
     height: 530px;
     display: flex;
     align-items: center;
@@ -57,7 +57,10 @@ main{
 }
 
 .formulario input:focus{
-    /* border: none; */
+    box-shadow: none;
+    outline: none;
+}
+.formulario textarea:focus{
     box-shadow: none;
     outline: none;
 }
@@ -66,10 +69,10 @@ main{
     display: flex;
     font-size: 15px;
     font-weight: 400;
-    padding: 10px;
-    margin: 0;
-    border: none;
-    
+    padding: 10px;  
+    border-radius: 10px;
+    border: 1px groove #00000086;
+    /* border: 1px solid #000; */
 }
 
 .validador-nome-off {
@@ -100,41 +103,39 @@ main{
 
 .formulario .inputs .container .nome {
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 45px;
-    border: 2px solid #000;
-    border-radius: 5px; 
+    border-radius: 3px; 
 }
 
 .formulario .inputs .container .email {
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 45px;
-    border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .formulario .inputs .container .telefone {
     display: flex;
-    width: 400px;
+    width: 350px;
     height: 45px;
-    border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .formulario .inputs .container .mensagem {
     display: flex;
-    margin: 0%;
-    width: 400px;
-    height: auto;
-    border-radius: 5px;
-    border: 2px solid #000;
+    width: 350px;
+    height: 150px;
 }
-.formulario .inputs .container .mensagem input{
+.formulario .inputs .container textarea{
+    resize: none;
+    border-radius: 10px;
+    border: 1px groove #00000086;
+    width: 350px;
+    padding: 10px;
     font-size: 15px;
     font-weight: 400;
     text-align: top;
-    height: 150px;
 }
 
 .formulario .inputs .mensagem h2{
@@ -148,7 +149,7 @@ main{
     color: #fff;
     border: 0;
     border-radius: 5px;
-    width: 400px;
+    width: 320px;
     height: 42px;
     transition: 0.3s;
     margin-bottom: 21px;
@@ -157,33 +158,39 @@ main{
 
 .red{
     display: flex;
-    width: 400px;
+    resize: none;
+    width: 350px;
     height: 45px;
     border: 2px solid #FF0000;
-    border-radius: 5px; 
+    border-radius: 10px; 
+    font-size: 15px;
 }
 
 
 .mensagem-red {
     display: flex;
-    width: 400px;
+    resize: none;
+    width: 350px;
     height: 150px;
     border: 2px solid #FF0000;
-    border-radius: 5px; 
+    border-radius: 10px; 
+    font-size: 15px;
 }
 
 .green{
     display: flex;
-    width: 400px;
+    resize: none;
+    width: 350px;
     height: 45px;
     border: 2px solid rgb(0, 252, 0);
-    border-radius: 5px; 
+    border-radius: 10px; 
 }
 
 .mensagem-green {
     display: flex;
-    width: 400px;
+    resize: none;
+    width: 350px;
     height: 150px;
     border: 2px solid rgb(5, 255, 5);
-    border-radius: 5px; 
+    border-radius: 10px; 
 }

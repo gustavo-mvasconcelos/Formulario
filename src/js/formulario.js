@@ -1,9 +1,32 @@
+// Teste nao sucedido
+
+// const containerFormulario = document.querySelectorAll('.container')
+// const botaoEnviar = document.querySelector('.btn-enviar')
+
+// botaoEnviar.addEventListener('click', (e) => {
+//     e.preventDefault()
+
+//     containerFormulario.forEach((input)=>{
+//         if (input.value){
+//             input.classList.add('valido')
+//             input.nextElementSibling.classList.add('mostrar')
+//         } else{
+//             input.classList.remove('valido')
+//             input.classList.add('erro')
+//             input.nextElementSibling.classList.add('mostrar')
+//         }
+//     });
+// })
+
+
+
+
 function SubmitEvent(){
     const inputNome = document.getElementById("input-nome").value
     const inputEmail = document.getElementById("input-email").value
     const inputTelefone = document.getElementById("input-telefone").value
-    const inputMensagem = document.getElementById("input-mensagem").value
-    const enviar = document.getElementById("enviar");
+    const textareaMensagem = document.getElementById("textarea-mensagem").value
+    const enviar = document.getElementById("btn-enviar");
 
     if(inputNome === ""){
         bordaVermelha("nome", "container-name");
@@ -20,16 +43,11 @@ function SubmitEvent(){
     } else {
         bordaVerde("telefone", "container-telefone");
     }
-    if(inputMensagem === ""){
+    if(textareaMensagem === ""){
         bordaVermelha("mensagem", "container-mensagem");
     } else {
         bordaVerde("mensagem", "container-mensagem");
     }
-
-    // console.log(inputNome)
-    // console.log(inputEmail)
-    // console.log(inputTelefone)
-    // console.log(inputMensagem)
 }
 
 function bordaVerde(className, id){
@@ -41,8 +59,10 @@ function bordaVerde(className, id){
     if(className.indexOf('mensagem') > -1) {
         getDiv.classList.add("mensagem-green");
     } else {
-        getDiv.classList.add("green");
+        getDiv.classList.add("green");  
     }
+    const getSpan = document.getElementById(`validador-${className}-off`)
+    getSpan.classList.add(`validador-${className}-off`);
 }
 
 function bordaVermelha(className, id){
