@@ -63,6 +63,7 @@ function bordaVerde(className, id){
     }
     const getSpan = document.getElementById(`validador-${className}-off`)
     getSpan.classList.add(`validador-${className}-off`);
+    
 }
 
 function bordaVermelha(className, id){
@@ -71,8 +72,11 @@ function bordaVermelha(className, id){
     getDiv.classList.remove(className);
 
     if(className.indexOf('mensagem') > -1) {
+        getDiv.classList.remove("mensagem-green")
+        getDiv.classList.remove("green")
         getDiv.classList.add("mensagem-red");
     } else {
+        getDiv.classList.remove("green")
         getDiv.classList.add("red");
     }
 
